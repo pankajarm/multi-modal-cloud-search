@@ -8,5 +8,5 @@ DEBUG = True
 # serving via REST
 # HOST = "demo-cas.jina.ai"
 HOST = "0.0.0.0"
-PORT_EXPOSE = 51000
+PORT_EXPOSE = "51000"
 PROTOCOL = 'grpc'
