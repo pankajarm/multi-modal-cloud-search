@@ -60,9 +60,12 @@ def search_by_image(input):
 
 def show_results(query, results):
     print(f"query_text: {query[0].text}")
+    print(f"results are: {results}")
     for d in results:
-        for m in d.matches:
-            print(d.uri, m.uri, m.scores['cosine'].value)
+        print("d:", d)
+        print(type(d))
+    #  for m in d.matches:
+    #         print(d.uri, m.uri, m.scores['cosine'].value)   
     return results
 
 def set_bg_hack_url(url: str) -> None:
