@@ -1,0 +1,47 @@
+Build Multimodality Search Engine on AWS Free Tier EC2 Machine!
+
+
+all steps here before creating virtual_env https://medium.com/codex/set-up-an-ubuntu-based-ec2-instance-with-a-virtual-python-environment-ae7c434fccc6
+
+#update ubuntu
+sudo apt-get update
+sudo apt-get upgrade
+
+# install python3-pip ubuntu package
+sudo apt install python3-pip
+
+
+# FOR AWS LINUX EC2 below commands remains same as it comes pre installed with python3 (3.7)
+#update linux
+sudo yum update
+
+
+# check which python3
+which python3
+
+#upgrade pip (optional)
+python3 -m pip install --upgrade pip
+
+# install virtualenv package
+pip3 install virtualenv
+
+# add path to ~/bashrc
+export PATH="$PATH:$HOME/.local/bin"
+
+#execute bashrc
+. ~/.bashrc
+
+#check which virtualenv
+which virtualenv
+
+# create jina-now virtual environment
+virtualenv jina-now-env
+
+#activate jina-now virtual env
+source jina-now-env/bin/activate
+
+# now jina stuff
+pip install jina
+pip install jina-now
+pip install clip-server
+pip install clip-client

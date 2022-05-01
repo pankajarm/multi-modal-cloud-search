@@ -1,0 +1,56 @@
+Notes on various EC2 Machines availabe for jina-now and clip-as-service
+
+INSTALL
+
+t3.nano
+(ubuntu)
+jina: yes
+jina-now: NO
+clip-server: yes
+clip-client: yes
+
+
+t3.nano
+(Amazon Linux)
+
+jina: yes
+jina-now: NO
+clip-server: yes
+clip-client: yes
+
+
+t3.medium
+(ubuntu)
+
+jina: yes
+jina-now: NO
+clip-server: yes
+clip-client: yes
+
+
+
+RUN
+
+t3.nano
+(ubuntu)
+jina: FAIL
+jina-now: NA
+clip-server: FAIL
+clip-client: NA
+
+
+t3.nano
+(Amazon Linux)
+
+jina: FAIL
+jina-now: NA
+clip-server: FAIL
+clip-client: NA
+
+t3.medium
+(ubuntu)
+
+jina: yes
+jina-now: NO
+clip-server: yes
+clip-client: yes
