@@ -29,7 +29,7 @@ elif input_media == "image":
         st.success("success")
 
 if "matches" in locals():
-    for match in list(matches["@m"]):
+    for match in matches:
         print(match.uri)
         pic_cell, metric = st.columns([5, 3])
         image = resize_image(match.uri, resize_factor=3)
