@@ -59,3 +59,9 @@ git clone https://github.com/psmathur/multi-modal-cloud-search.git
 # run frontend steamlit server
 cd multi-modal-cloud-search
 streamlit run frontend/frontend.py
+
+
+
+# updated code from gitrepo
+cd multi-modal-cloud-search
+git pull https://github.com/psmathur/multi-modal-cloud-search.git
