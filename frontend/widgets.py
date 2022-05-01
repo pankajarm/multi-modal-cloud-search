@@ -11,7 +11,7 @@ def sidebar_widget():
     input_media = st.sidebar.radio(label="Search with...", options=["text", "image"])
 
     st.sidebar.markdown(
-        """This example lets you use a *textual* description to search through *images* using [Jina](https://github.com/jina-ai/jina/).
+        """Image-to-Image and Text-to-Text Search using [Jina](https://github.com/jina-ai/jina/).
         """
     )
 
