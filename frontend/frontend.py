@@ -18,7 +18,7 @@ if input_media == "text":
     text_query = st.text_input(label="Search term")
     text_search_button = st.button("Search")
     if text_search_button:
-        matches = search_by_text(text_query)
+        matches = search_by_text(text_query, verbose=True)
         st.success("success")
 
 elif input_media == "image":
