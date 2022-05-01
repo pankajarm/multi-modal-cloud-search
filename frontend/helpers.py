@@ -64,8 +64,8 @@ def show_results(query, results):
     for d in results:
         print("d:", d)
         print(type(d))
-    #  for m in d.matches:
-    #         print(d.uri, m.uri, m.scores['cosine'].value)   
+        print(d.summary())
+        # print(d.uri, d.uri, m.scores['cosine'].value) 
     return results
 
 def set_bg_hack_url(url: str) -> None:
