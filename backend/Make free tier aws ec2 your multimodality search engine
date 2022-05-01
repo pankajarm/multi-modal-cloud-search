@@ -45,3 +45,17 @@ pip install jina
 pip install jina-now
 pip install clip-server
 pip install clip-client
+
+# run backend clip-server
+python -m clip_server
+
+
+#install streamlit
+pip install streamlit
+
+# clone gitrepo
+git clone https://github.com/psmathur/multi-modal-cloud-search.git
+
+# run frontend steamlit server
+cd multi-modal-cloud-search
+streamlit run frontend/frontend.py
