@@ -16,11 +16,11 @@ def sidebar_widget():
     )
 
     st.sidebar.markdown(
-        "[Repo link](https://github.com/psmathur/MULTI-MODAL-CLOUD-SEARCH)"
+        "[Repo link](https://github.com/psmathur/multi-modal-cloud-search)"
     )
     
     st.sidebar.markdown(
-        "[Credits](https://github.com/k-zehnder/jina-clip-streamlit))"
+        "[Credits](https://github.com/k-zehnder/jina-clip-streamlit)"
     )
     return input_media
 
