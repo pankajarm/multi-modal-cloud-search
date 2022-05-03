@@ -32,7 +32,7 @@ def resize_image(filename: str, resize_factor: str=IMAGE_RESIZE_FACTOR) -> Image
     w, h = image.size
     return image.resize((w * resize_factor, h * resize_factor), Image.ANTIALIAS)
 
-def search_by_text(query_text, verbose=False):
+def search_by_text(query_text:str, verbose=False):
     client = get_client()
     input_docarray = create_query_da(query_text)
     vec = client.encode(input_docarray, show_progress=True)
@@ -58,7 +58,7 @@ def search_by_image(input):
     # )
     return results
 
-def show_results(query, results):
+def show_results(query:DocumentArray, results):
     print(f"query_text: {query[0].text}")
     print(f"results are: {results}")
     for d in results:
