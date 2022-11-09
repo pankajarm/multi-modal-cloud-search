@@ -1,5 +1,5 @@
-# Multi Modality Cloud Search
-A sample project showing all the steps to build end to end Multi Modailty Search
+# Multi Modality Cloud Search System
+A sample project showing all the steps to build end to end Multi Modailty Search Service and Frontend app.
 
 Modelling:
 Fine Tuned CLIP Textual and Image Models on Unsplash photo and descriptions  
