@@ -18,19 +18,21 @@ if input_media == "text":
     text_query = st.text_input(label="Search term")
     text_search_button = st.button("Search")
     if text_search_button:
-        matches = search_by_text(text_query, verbose=True)
+        matches = search_by_text(text_query, verbose=False)
         st.success("success")
 
 elif input_media == "image":
     image_query = st.file_uploader(label="Image file")
     image_search_button = st.button("Search")
     if image_search_button:
-        matches = search_by_image(image_query)
+        matches = search_by_image(image_query, verbose=False)
         st.success("success")
 
 if "matches" in locals():
-    for match in matches:
-        print(match.uri)
+    for match in matches[0]:
+        # print("match:", match)
+        # print("match.uri", match.uri)
+        # local_image_path = "/"+str(match.uri)
         pic_cell, metric = st.columns([5, 3])
         image = resize_image(match.uri, resize_factor=3)
         
@@ -38,4 +40,4 @@ if "matches" in locals():
         score = match.scores["cosine"].value
         
         metric.button(key=match.id, label=f"score: {score:.5f}")
-        metric.write(" ")
+        # metric.write(" ")
