@@ -11,17 +11,19 @@ def sidebar_widget():
     input_media = st.sidebar.radio(label="Search with...", options=["text", "image"])
 
     st.sidebar.markdown(
-        """Image-to-Image and Text-to-Text Search using [Jina](https://github.com/jina-ai/jina/).
+        """Image-to-Image and Text-to-Image Search using:
+        [Jina](https://jina.ai)
+        [Streamlit](https://streamlit.io)
         """
     )
 
     st.sidebar.markdown(
-        "[Repo link](https://github.com/psmathur/multi-modal-cloud-search)"
+        "[Repo link](https://github.com/pankajarm/multi-modal-cloud-search)"
     )
     
-    st.sidebar.markdown(
-        "[Credits](https://github.com/k-zehnder/jina-clip-streamlit)"
-    )
+    # st.sidebar.markdown(
+    #     "[Credits](https://github.com/k-zehnder/jina-clip-streamlit)"
+    # )
     return input_media
 
     
